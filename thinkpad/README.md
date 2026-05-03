@@ -27,7 +27,7 @@ thinkpad/
 
 **One command - that's it:**
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/Clementinose/thinkpad/main/menu.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/Clementinose/thinkpad/main/thinkpad/menu.sh)
 ```
 
 Just paste this and the menu appears. Everything downloads automatically!
