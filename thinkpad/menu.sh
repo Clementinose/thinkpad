@@ -9,6 +9,23 @@ CYAN='\033[0;36m'
 WHITE='\033[1;37m'
 RESET='\033[0m'
 
+# GitHub repository base URL
+REPO_URL="https://raw.githubusercontent.com/Clementinose/thinkpad/main"
+
+# Function to run scripts from GitHub or locally
+run_script_github() {
+    local script_path="$1"
+    local script_name="$2"
+    
+    # Try local first, fall back to GitHub
+    if [ -f "$script_path" ]; then
+        bash "$script_path"
+    else
+        echo -e "${BLUE}Downloading $script_name from GitHub...${RESET}"
+        bash <(curl -fsSL "$REPO_URL/$script_path")
+    fi
+}
+
 # Clear screen
 clear
 
@@ -34,8 +51,8 @@ read -p "$(echo -e ${YELLOW}Välj ett alternativ: ${RESET})" choice
 
 # Kör användarval
 case "$choice" in
-  1) bash "$(dirname "$0")/scripts/system/update_system.sh" ;;
-  2) bash "$(dirname "$0")/scripts/apps/selection_apps.sh" ;;
+  1) run_script_github "scripts/system/update_system.sh" "System Update" ;;
+  2) run_script_github "scripts/apps/selection_apps.sh" "App Selection" ;;
   3) echo -e "${RED}👋 Hej då${RESET}" ; exit 0 ;;
   *) echo -e "${RED}❌ Fel val${RESET}" ;;
 esac

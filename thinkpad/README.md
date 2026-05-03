@@ -23,17 +23,14 @@ thinkpad/
 - Internet connection (for some scripts)
 - Root/sudo privileges (for installations)
 
-### Running the Main Menu
+### Running the Toolkit
 
-**One command for everything:**
+**One command - that's it:**
 ```bash
-git clone https://github.com/Clementinose/thinkpad.git && cd thinkpad && chmod +x *.sh scripts/*/*.sh && ./menu.sh
+bash <(curl -fsSL https://raw.githubusercontent.com/Clementinose/thinkpad/main/menu.sh)
 ```
 
-Or locally if already downloaded:
-```bash
-./menu.sh
-```
+Just paste this and the menu appears. Everything downloads automatically!
 
 This will display the main menu with all available options:
 
