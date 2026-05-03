@@ -1,4 +1,4 @@
-# ThinkPad System Management Toolkit
+# ThinkPad System Management Toolkit!
 
 A comprehensive bash-based toolkit for managing Linux system updates and application installations.
 
