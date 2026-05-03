@@ -25,8 +25,14 @@ thinkpad/
 
 ### Running the Main Menu
 
+**Super easy - just type:**
 ```bash
 ./menu.sh
+```
+
+**Or run directly from GitHub:**
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/Clementinose/thinkpad/main/menu.sh)
 ```
 
 This will display the main menu with all available options:
