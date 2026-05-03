@@ -30,7 +30,7 @@ thinkpad/
 bash <(curl -fsSL https://raw.githubusercontent.com/Clementinose/thinkpad/main/thinkpad/menu.sh)
 ```
 
-Just paste this and the menu appears. Everything downloads automatically!
+Just paste this and the menu appears instantly. Everything works immediately - no downloads needed!
 
 This will display the main menu with all available options:
 
