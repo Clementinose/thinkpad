@@ -10,7 +10,7 @@ WHITE='\033[1;37m'
 RESET='\033[0m'
 
 # GitHub repository base URL
-REPO_URL="https://raw.githubusercontent.com/Clementinose/thinkpad/main"
+REPO_URL="https://raw.githubusercontent.com/Clementinose/thinkpad/main/thinkpad"
 
 # Function to run scripts from GitHub or locally
 run_script_github() {
